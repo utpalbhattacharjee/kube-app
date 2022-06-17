@@ -10,9 +10,10 @@ aws ec2 create-volume --availability-zone=ap-south-1a --size=3 --volume-type=gp3
 
 kubectl get nodes
 
-kubectl describe node ip-172-20-59-3.ap-south-1.compute.internal | grep ap-south-1
+kubectl describe node ip-172-20-44-39.ap-south-1.compute.internal | grep ap-south-1
 
-
+kubectl label nodes ip-172-20-44-39.ap-south-1.compute.internal zone=ap-south-1a
+kubectl label nodes ip-172-20-83-197.ap-south-1.compute.internal zone=ap-south-1b
 
 
 
