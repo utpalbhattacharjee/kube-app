@@ -6,7 +6,11 @@ kops update cluster --name utpalbhattacharjee.com --state=s3://my-cops-state --y
 
 kops validate cluster --name utpalbhattacharjee.com --state=s3://my-cops-state
 
-aws ec2 create-volume --availability-zone=ap-south-1a --size=3 --volume-type=gp3
+aws ec2 create-volume --availability-zone=ap-south-1a --size=3 --volume-type=gp3	#vol-029039743790077a9
+
+kubectl get nodes
+
+kubectl describe node ip-172-20-59-3.ap-south-1.compute.internal | grep ap-south-1
 
 
 
