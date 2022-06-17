@@ -21,14 +21,11 @@ kubectl get secret
 
 kubectl describe secret
 
+kubectl create -f vprodbdep.yml
 
+kubectl get deploy
 
-
-
-
-
-
-
+kubectl describe pod [NAME]
 
 
 
