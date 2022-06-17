@@ -15,11 +15,11 @@ kubectl describe node ip-172-20-44-39.ap-south-1.compute.internal | grep ap-sout
 kubectl label nodes ip-172-20-44-39.ap-south-1.compute.internal zone=ap-south-1a
 kubectl label nodes ip-172-20-83-197.ap-south-1.compute.internal zone=ap-south-1b
 
+kubectl create -f app-secret.yml
 
+kubectl get secret
 
-
-
-
+kubectl describe secret
 
 
 
