@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vprodb
-        image: utpalbhattacharjee/vprofiledb:V1
+        image: imranvisualpath/8amysql-db_1:V1
         ports:
         - name: vprodb-port
           containerPort: 3306
