@@ -1,0 +1,5 @@
+#Install kubectl and kops on the system.
+
+kops create cluster --name=utpalbhattacharjee.com --state=s3://my-cops-state --zones=ap-south-1a,ap-south-1b --node-count=2 --node-size=t2.small --master-size=t2.small --dns-zone=utpalbhattacharjee.com
+
+kops update cluster --name utpalbhattacharjee.com --state=s3://my-cops-state --yes --admin
